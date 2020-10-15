@@ -1,0 +1,123 @@
+body {
+    background-color: #f1f1f1;
+}
+
+
+h2 {
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+p {
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+
+.flex-container1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.flex-container1 > div {
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+  .flex-container2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+  .flex-container3 {
+    background-color: #f1f1f1;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.flex-container4 {
+    background-color: #888888;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-container5 {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.cards {
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background:#f1f1f1;
+    transition: width 2s;
+  }
+  
+.cards:hover {
+    box-shadow:        
+        10px 10px rgb(110, 110, 110);
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        transition: 0.3s;
+        background: #da6464;
+        color: white;
+        font-size: 17px;
+        
+  }
+
+
+.specialiteiten {
+    font-size: 15px;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    background:#f1f1f1;
+    transition: width 2s;
+}
+
+
+.specialiteiten:hover {
+    box-shadow:        
+        10px 10px rgb(110, 110, 110);
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+        transition: 0.3s;
+        background: #da6464;
+        color: white;
+        font-size: 17px;
+}
+
+
+.Slogan {
+    text-align: center; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
