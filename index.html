@@ -10,152 +10,159 @@
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/ezweb.css">
-    <script src="js/ezweb.js"></script>
-
 </head>
 
 <body>
-<div id="content">
-    <div class="flex-container1">
-        <div>
-            <img src="EZ-01.png" height="40%" width="40%" alt="logo">
-        </div>
-        <div>
+    <div id="content">
+        <div class="flex-container">
+            <div>
+                <img src="EZ-01.png" height="40%" width="40%" alt="logo">
+            </div>
+            <div>
+                <!-- Button trigger modal -->
+                <button  class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    Werk met ons
+                </button>
 
-            <!-- Button trigger modal -->
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                Werk met ons
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="container">
-                                <form action="/action_page.php">
-                                    <label for="fname">First Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-
-                                    <label for="lname">Last Name</label>
-                                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-                                    <label for="country">Country</label>
-                                    <select id="country" name="country">
-                                        <option value="australia">Australia</option>
-                                        <option value="canada">Canada</option>
-                                        <option value="usa">USA</option>
-                                    </select>
-
-                                    <label for="subject">Subject</label>
-                                    <textarea id="subject" name="subject" placeholder="Write something.."
-                                        style="height:200px"></textarea>
-
-                                </form>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button  class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
                             </div>
+                            <div class="modal-body">
+
+                                <div class="container">
+                                    <form action="/action_page.php">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                                        <br>
+
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                        <br>
+
+                                        <label for="country">Country</label>
+                                        <select id="country" name="country">
+                                            <option value="australia">Australia</option>
+                                            <option value="canada">Canada</option>
+                                            <option value="usa">USA</option>
+                                        </select>
+                                        <br>
+
+                                        <label for="subject">Subject</label><br>
+                                        <textarea id="subject" name="subject" placeholder="Write something.."
+                                            style="height:200px"></textarea>
+
+                                    </form>
+                                </div>
 
 
-                        </div>
-                        <div class="modal-footer">
+                            </div>
+                            <div class="modal-footer">
 
-                            <button type="button" class="btn btn-primary">Verstuur</button>
+                                <button class="btn btn-primary">Verstuur</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <hr class="solidBorder">
+
+        <div class="flex-container">
+            <div class="shadowHoverContainer">
+                <div class="cards" id="basicPack">
+                    <p>EZ BASIC</p>
+                    <p>€300,- inc.</p>
+                    <button class="moveUpOnHover moreInfoBtn">Meer info</button>
+                </div>
+                <div class="belowShadow"></div>
+            </div>
+            <div class="shadowHoverContainer">
+                <div class="cards">
+                    <p>EZ PREMIUM</p>
+                    <p>€500,- inc.</p>
+                    <button class="moveUpOnHover moreInfoBtn">Meer info</button>
+                </div>
+                <div class="belowShadow"></div>
+            </div>
+            <div class="shadowHoverContainer">
+                <div class="cards">
+                    <p>EZ PRO</p>
+                    <p>€800,- inc.</p>
+                    <button class="moveUpOnHover moreInfoBtn">Meer info</button>
+                </div>
+                <div class="belowShadow"></div>
+            </div>
+        </div>
+
+
+        <div class="Slogan">
+            <h2>ONZE SPECIALITEITEN<h2>
+                    <p>De specialist in web & IT-services</p>
+        </div>
+
+        <hr class="solidBorder">
+
+        <div class="flex-container">
+            <div class="specialiteiten">
+                <p>DESIGN</p>
+            </div>
+            <div class="specialiteiten">
+                <p>HOSTING</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="specialiteiten">
+                <p>SEO</p>
+            </div>
+            <div class="specialiteiten">
+                <p>ANALYTICS</p>
+            </div>
+        </div>
+        <div class="flex-container">
+            <div class="specialiteiten">
+                <p>CMS</p>
+            </div>
+            <div class="specialiteiten">
+                <p>DEVELOPMENT</p>
+            </div>
+        </div>
+
+        <hr class="solidBorder">
+
+
+
+
+
+        <div class="flex-container">
+            <div class="team">
+                <h2>ONS TEAM</h2>
+                <h3>Samen gaan we ervoor</h3>
+            </div>
+        </div>
+
+        <div class="flex-container">
+            <div class="footer">
+                <h2>FOOTER</h2>
+            </div>
+        </div>
+
     </div>
-
-    <hr class="solid">
-
-    <div class="flex-container2">
-        <div class="cards">
-            <p>EZ BASIC</p>
-            <p>€300,- inc.</p>
-            <button type="button">Meer info</button>
-        </div>
-
-        <div class="cards">
-            <p>EZ PREMIUM</p>
-            <p>€500,- inc.</p>
-            <button type="button">Meer info</button>
-        </div>
-
-        <div class="cards">
-            <p>EZ PRO</p>
-            <p>€800,- inc.</p>
-            <button type="button">Meer info</button>
-        </div>
-
-    </div>
-    
-
-    <div class="Slogan">
-        <h2>ONZE SPECIALITEITEN<h2>
-                <p>De specialist in web & IT-services</p>
-    </div>
-
-    <hr class="solid">
-
-    <div class="flex-container3">
-        <div class="specialiteiten">
-            <p>DESIGN</p>
-        </div>
-        <div class="specialiteiten">
-            <p>HOSTING</p>
-        </div>
-    </div>
-    <div class="flex-container3">
-        <div class="specialiteiten">
-            <p>SEO</p>
-        </div>
-        <div class="specialiteiten">
-            <p>ANALYTICS</p>
-        </div>
-    </div>
-    <div class="flex-container3">
-        <div class="specialiteiten">
-            <p>CMS</p>
-        </div>
-        <div class="specialiteiten">
-            <p>DEVELOPMENT</p>
-        </div>
-    </div>
-
-    <hr class="solid">
-
-
-
-
-
-    <div class="flex-container4">
-        <div class="team">
-            <h2>ONS TEAM</h2>
-            <h3>Samen gaan we ervoor</h3>
-        </div>
-    </div>
-
-    <div class="flex-container5">
-        <div class="footer">
-            <h2>FOOTER</h2>
-        </div>
-    </div>
-
-</div>
 
     <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="js/ezweb.js"></script>
 </body>
 
 </html>

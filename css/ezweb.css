@@ -1,133 +1,134 @@
+/*
+    Imported CSS, i.e. footers, buttons, animations should go in DIFFERENT files and then
+    be loaded into the HTML document at the bottom.
+
+    Keep each type of selector within their own group and in alphabetical order.
+    If media queries are necessary, add a new group (------- Group name (-------).
+*/
+
+/* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
+
 body {
-    background-color: #606060;
-}
-
-#content {
-    margin: auto;
-    background-color: #f1f1f1;
-width: 60%;
-
+    background: rgb(137, 175, 62);
+    background: linear-gradient(90deg, rgb(128, 128, 128) 0%, rgba(96, 96, 96, 1) 30%);
 }
 
 h2 {
-    text-align: center; 
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 22px;
 }
 
+.solidBorder {
+    border-top: 3px solid #bbb;
+}
+
 p {
-    text-align: center; 
+    text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 20px;
 }
 
+/* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
 
-.flex-container1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
+.belowShadow {
+    background-color: rgb(110, 110, 110);
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
-
-.flex-container1 > div {
-    background-color: #f1f1f1;
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-  }
-
-  .flex-container2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-
-  .flex-container3 {
-    background-color: #f1f1f1;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-
-.flex-container4 {
-    /* background-color: #888888; */
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-.flex-container5 {
-    background-color: #f1f1f1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    text-align: center;
-}
-
-
-
 
 .cards {
+    position: relative;
     font-size: 15px;
     text-align: center;
     width: 200px;
     height: 200px;
-    background:#f1f1f1;
-    transition: width 2s;
-  }
-  
-.cards:hover {
-    box-shadow:        
-        10px 10px rgb(110, 110, 110);
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-        transition: 0.3s;
-        background: #da6464;
-        color: white;
-        font-size: 17px;
-        
-  }
+    background-color: #f1f1f1;
+    transition-duration: 0.2s;
+    z-index: 3;
+}
 
+.flex-container {
+    background-color: #f1f1f1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.moreInfoBtn {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    font-size: 15px;
+    background-color: #a31616;
+    color: white;
+    border-style: none;
+}
+
+.moveUpOnHover {
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.shadowHoverContainer {
+    position: relative;
+}
+
+.Slogan {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
 
 .specialiteiten {
     font-size: 15px;
     text-align: center;
     width: 200px;
     height: 50px;
-    background:#f1f1f1;
+    background: #f1f1f1;
     transition: width 2s;
 }
 
+/* --------------------------------------------------------------------------------- IDs --------------------------------------------------------------------------------- */
+
+#content {
+    margin: auto;
+    background-color: #f1f1f1;
+    width: 60%;
+}
+
+/* --------------------------------------------------------------------------------- Pseudo Classes --------------------------------------------------------------------------------- */
+.cards:hover {
+    background-color: #da6464;
+    color: white;
+    font-size: 17px;
+    transform: translate(-5px, -5px);
+}
+
+.cards:hover .moveUpOnHover {
+    opacity: 1;
+    bottom: 0px;
+    transition-delay: 0.2s;
+}
+
+.moreInfoBtn:hover {
+    background-color: black;
+}
 
 .specialiteiten:hover {
-    box-shadow:        
-        10px 10px rgb(110, 110, 110);
-        -webkit-transform: translateX(-3px);
-        transform: translateX(-3px);
-        transition: 0.3s;
-        background: #da6464;
-        color: white;
-        font-size: 17px;
+    box-shadow: 10px 10px rgb(110, 110, 110);
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: 0.3s;
+    background: #da6464;
+    color: white;
+    font-size: 17px;
 }
-
-
-.Slogan {
-    text-align: center; 
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
-hr.solid {
-    border-top: 3px solid #bbb;
-  }
