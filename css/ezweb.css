@@ -8,9 +8,10 @@
 
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
 
+
+
 body {
-    background: rgb(137, 175, 62);
-    background: linear-gradient(90deg, rgb(128, 128, 128) 0%, rgba(96, 96, 96, 1) 30%);
+    background: black;
 }
 
 h2 {
@@ -21,7 +22,7 @@ h2 {
 }
 
 .solidBorder {
-    border-top: 3px solid #bbb;
+    border-top: 3px solid #CAE7EA;
 }
 
 p {
@@ -34,7 +35,7 @@ p {
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
 
 .belowShadow {
-    background-color: rgb(110, 110, 110);
+    /* background-color: rgb(110, 110, 110); */
     z-index: 2;
     position: absolute;
     top: 0;
@@ -49,19 +50,19 @@ p {
     text-align: center;
     width: 200px;
     height: 200px;
-    background-color: #f1f1f1;
+    background-color: #CAE7EA;
     transition-duration: 0.2s;
     z-index: 3;
 }
 
 .flex-container {
-    background-color: #f1f1f1;
+    background-color: black;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
 }
-
+/* 
 .moreInfoBtn {
     position: absolute;
     bottom: -20px;
@@ -71,7 +72,7 @@ p {
     background-color: #a31616;
     color: white;
     border-style: none;
-}
+} */
 
 .moveUpOnHover {
     opacity: 0;
@@ -88,22 +89,22 @@ p {
     font-size: 20px;
 }
 
-.specialiteiten {
+/* .specialiteiten {
     font-size: 15px;
     text-align: center;
     width: 200px;
     height: 50px;
     background: #f1f1f1;
     transition: width 2s;
-}
+} */
 
 /* --------------------------------------------------------------------------------- IDs --------------------------------------------------------------------------------- */
 
-#content {
+/* #content {
     margin: auto;
     background-color: #f1f1f1;
     width: 60%;
-}
+} */
 
 /* --------------------------------------------------------------------------------- Pseudo Classes --------------------------------------------------------------------------------- */
 .cards:hover {
@@ -124,7 +125,7 @@ p {
     background-color: black;
 }
 
-.specialiteiten:hover {
+/* .specialiteiten:hover {
     box-shadow: 10px 10px rgb(110, 110, 110);
     -webkit-transform: translateX(-3px);
     transform: translateX(-3px);
@@ -132,11 +133,5 @@ p {
     background: #da6464;
     color: white;
     font-size: 17px;
-}
+} */
 
-/* probeersel */
-#basicPack {
-    background-image: url('/EZWEB/img/EZ_BASIC-01-01.png'); 
-    height: 400px;
-    width: 400px;
-}
