@@ -111,6 +111,7 @@ p {
     color: white;
     font-size: 17px;
     transform: translate(-5px, -5px);
+    
 }
 
 .cards:hover .moveUpOnHover {
@@ -131,4 +132,11 @@ p {
     background: #da6464;
     color: white;
     font-size: 17px;
+}
+
+/* probeersel */
+#basicPack {
+    background-image: url('/EZWEB/img/EZ_BASIC-01-01.png'); 
+    height: 400px;
+    width: 400px;
 }
