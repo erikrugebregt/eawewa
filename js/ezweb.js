@@ -8,6 +8,8 @@ async function openModal(htmlModalContent)
     $("#topBar").show();
     $("#bottomBar").show();
 
+    $("#modalContent").html(htmlModalContent);
+
     $("#leftBar").animate(
         {
             "height": "50%"
@@ -48,7 +50,12 @@ async function openModal(htmlModalContent)
 
 $("#contactBtn").click(function ()
 {
-    openModal();
+    openModal(`
+        <div style="text-align: center;">
+            E-mail: info@ezweb.com <br>
+            Telefoonnummer: +31 6 16284091
+        </div>
+    `);
 });
 
 
