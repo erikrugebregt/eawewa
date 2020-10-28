@@ -7,9 +7,6 @@
 */
 
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
-
-
-
 body {
     background: black;
 }
@@ -76,7 +73,7 @@ p {
 
 .moveUpOnHover {
     opacity: 0;
-    transition-duration: 0.2s;
+    /* transition-duration: 0.2s; */
 }
 
 .shadowHoverContainer {
@@ -117,12 +114,13 @@ p {
 
 .cards:hover .moveUpOnHover {
     opacity: 1;
-    bottom: 0px;
-    transition-delay: 0.2s;
+    /* bottom: 0px;
+    transition-delay: 0.2s; */
+    transition-duration: 0.2s;
 }
 
 .moreInfoBtn:hover {
-    background-color: black;
+    background-color: rgb(255, 166, 166);
 }
 
 /* .specialiteiten:hover {
