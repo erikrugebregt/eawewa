@@ -54,7 +54,7 @@ p {
 
 .flex-container {
     background-color: black;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
