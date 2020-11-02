@@ -53,7 +53,7 @@ $("#contactBtn").click(function ()
     openModal(`
         
     <div style="text-align: center;">
-            E-mail: info@ezweb.com <br>
+            
             Telefoonnummer: +31 6 16284091
         </div>
 
