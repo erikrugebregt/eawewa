@@ -31,6 +31,11 @@ h2 {
     font-size: 22px;
 }
 
+#blue {
+    background: #CAE7EA;
+    height: 800px;
+}
+
 .solidBorder {
     border-top: 3px solid #CAE7EA;
 }
@@ -53,11 +58,13 @@ p {
 }
 
 .flex-container {
+    
     background-color: black;
     display: inline-flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
 .moveUpOnHover {
@@ -84,12 +91,16 @@ p {
 
 .card {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 360px;
     height: 400px;
     background: #000;
+    
 }
 
 .card .image {
