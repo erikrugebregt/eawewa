@@ -24,6 +24,8 @@ body {
     background: black;
 }
 
+
+
 h2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -31,9 +33,10 @@ h2 {
     font-size: 22px;
 }
 
-#blue {
+.blue {
     background: #CAE7EA;
     height: 800px;
+     text-align: center;
 }
 
 .solidBorder {
@@ -61,7 +64,7 @@ p {
     
     background-color: black;
     display: inline-flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -81,6 +84,16 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
 }
+
+.flex-container1 {
+    
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+   
+}
+
+
 
 /* --------------------------------------------------------------------------------- IDs --------------------------------------------------------------------------------- */
 
@@ -270,14 +283,14 @@ p {
       form { max-width:420px; margin:50px auto; }
       
       .feedback-input {
-        color:white;
+        color:rgb(204, 193, 193);
         font-family: Helvetica, Arial, sans-serif;
         font-weight:500;
         font-size: 18px;
         border-radius: 5px;
         line-height: 22px;
         background-color: transparent;
-        border:2px solid #CAE7EA;
+        border:2px solid #000000;
         transition: all 0.3s;
         padding: 13px;
         margin-bottom: 15px;
@@ -286,7 +299,7 @@ p {
         outline:0;
       }
       
-      .feedback-input:focus { border:2px solid #CAE7EA; }
+      .feedback-input:focus { border:2px solid #000000; }
       
       textarea {
         height: 150px;
@@ -297,7 +310,7 @@ p {
       [type="submit"] {
         font-family: 'Montserrat', Arial, Helvetica, sans-serif;
         width: 100%;
-        background:#CAE7EA;
+        background:#000000;
         border-radius:5px;
         border:0;
         cursor:pointer;
