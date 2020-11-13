@@ -2,8 +2,8 @@ let carousel = $(".carousel");
 let currdeg  = 0;
 
 
-$(".next").on("click", { d: "n" }, rotate);
-$(".prev").on("click", { d: "p" }, rotate);
+$(".item").on("click", { d: "n" }, rotate);
+
 
 
 function rotate(e)
