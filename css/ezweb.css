@@ -18,6 +18,16 @@
     src: url("fonts/ProximaNova-Regular.otf");
 }
 
+@font-face {
+    font-family: proximanovabold;
+    src: url("fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: proximanovaextrabold;
+    src: url("fonts/Proxima Nova Extrabold.otf")
+}
+
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
 
 body {
@@ -25,7 +35,7 @@ body {
 }
 
 h1 {
-    font-family: proximanovalight;
+    font-family: proximanovaextrabold;
 }
 
 
