@@ -77,10 +77,11 @@ p {
     
     background-color: black;
     display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* align-items: center; */
+    
 }
 
 .moveUpOnHover {
