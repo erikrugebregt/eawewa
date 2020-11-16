@@ -28,6 +28,20 @@
     src: url("fonts/Proxima Nova Extrabold.otf")
 }
 
+@font-face {
+    font-family: SailecBlack;
+    src: url("fonts/SailecBlack.ttf")
+}
+
+@font-face {
+    font-family: SailecBold;
+    src: url("fonts/SailecBold.ttf")
+}
+
+@font-face {
+    font-family: SailecMedium;
+    src: url("fonts/SailecMedium.ttf")
+}
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
 
 body {
@@ -35,7 +49,7 @@ body {
 }
 
 h1 {
-    font-family: proximanovaextrabold;
+    font-family: SailecMedium;
 }
 
 
