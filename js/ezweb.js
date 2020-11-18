@@ -73,3 +73,6 @@ window.onclick = function (event)
         $("#myModal").fadeOut("slow");
     }
 }
+
+
+/* Telegram message time! */

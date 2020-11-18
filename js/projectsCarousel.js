@@ -1,25 +1,49 @@
-let carousel = $(".carousel");
-let currdeg  = 0;
+let carousel     = $(".carousel");
+let currdeg      = 0;
+let turnFunction = null;
 
 
-$(".item").on("click", { d: "n" }, rotate);
-
-
-
-function rotate(e)
+$(".carouselContainer").hover(
+function ()
 {
-    if (e.data.d == "n")
+    rotate(-1);
+},
+function ()
+{
+    clearInterval(turnFunction);
+});
+$(".carouselContainer").click(
+function ()
+{
+    clearInterval(turnFunction);
+});
+
+
+function rotate(direction)
+{
+    turnFunction = setInterval(function ()
     {
-        currdeg = currdeg - 60;
-    }
-    if (e.data.d == "p")
-    {
-        currdeg = currdeg + 60;
-    }
-    carousel.css({
-        "-webkit-transform": "rotateY(" + currdeg + "deg)",
-        "-moz-transform": "rotateY(" + currdeg + "deg)",
-        "-o-transform": "rotateY(" + currdeg + "deg)",
-        transform: "rotateY(" + currdeg + "deg)"
-    });
+        if (direction == -1)
+        {
+            currdeg -= 3;
+        }
+        if (direction == 1)
+        {
+            currdeg += 3;
+        }
+        carousel.css({
+            "-webkit-transform": "rotateY(" + currdeg + "deg)",
+            "-moz-transform": "rotateY(" + currdeg + "deg)",
+            "-o-transform": "rotateY(" + currdeg + "deg)",
+            transform: "rotateY(" + currdeg + "deg)"
+        });
+    }, 50);
 }
+
+
+$("#openGEFModal").click(function ()
+{
+    openModal(`
+        <iframe src="https://globalearthfood.eu" title="GEF" style="width: 100%; height: 100%;"></iframe>
+    `);
+});
