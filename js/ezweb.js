@@ -76,3 +76,27 @@ window.onclick = function (event)
 
 
 /* Telegram message time! */
+$("#sendMsgBtn").click(function ()
+{
+    let msgString =
+    `
+        Naam: ${$("#nameInput").val()} - E-mail: ${$("#emailInput").val()} - Bericht: ${$("#commentInput").val()}
+    `;
+
+    $("#nameInput").val("");
+    $("#emailInput").val("");
+    $("#commentInput").val("");
+
+    $.ajax({
+        type: "POST",
+        url: "https://evening-plains-72758.herokuapp.com/forwardToTelegramGC",
+        data: {
+            message: msgString
+        },
+        success: function (resp)
+        {
+            console.log(resp);
+        }
+        // dataType: "Default"
+    });
+});
