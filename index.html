@@ -150,10 +150,10 @@
         <br>
         <br>
         <!-- <h2>Projects</h2> -->
-        <div class="container">
+        <div class="container carouselContainer">
             <div class="carousel">
                 <div class="item a">
-                    <img style="max-height:100%; max-width:100%" src="Logo_Wit.png" />
+                    <img id="openGEFModal" style="max-height:100%; max-width:100%" src="Logo_Wit.png"/>
                 </div>
                 <div class="item b"></div>
                 <div class="item c"></div>
@@ -168,22 +168,18 @@
         <br>
 
         <div class="blue">
-
             <p>Jouw klanten zijn onze klanten.</p>
             <p>No nonsense internetbureau met eigenwijze specialisten voor het sterkste resultaat.</p>
 
-
-
             <!-- contactform -->
 
-
             <h1 style="color:black; font-size: 40px;">Kunnen wij jou van dienst zijn?</h1>
-            <form>
-                <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-                <input type="submit" value="Verstuur" />
-            </form>
+            <div class="form">
+                <input id="nameInput" name="name" type="text" class="feedback-input" placeholder="Name" />
+                <input id="emailInput" name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea id="commentInput" name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input id="sendMsgBtn" type="submit" value="Verstuur"/>
+            </div>
         </div>
 
 

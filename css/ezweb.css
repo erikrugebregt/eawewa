@@ -42,6 +42,7 @@
     font-family: SailecMedium;
     src: url("fonts/SailecMedium.ttf")
 }
+
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
 
 body {
@@ -53,7 +54,6 @@ h1 {
     color: black;
 }
 
-
 h2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -64,7 +64,7 @@ h2 {
 .blue {
     background: #CAE7EA;
     height: 700px;
-     text-align: center;
+    text-align: center;
 }
 
 .solidBorder {
@@ -93,14 +93,12 @@ p {
 }
 
 .flex-container {
-    
     background-color: black;
     display: inline-flex;
     flex-direction: row;
     /* flex-wrap: wrap; */
     justify-content: space-between;
     /* align-items: center; */
-    
 }
 
 .moveUpOnHover {
@@ -119,23 +117,16 @@ p {
 }
 
 .flex-container1 {
-    
     display: inline-flex;
     flex-direction: row;
     text-align: center;
-   
 }
-
-
 
 /* --------------------------------------------------------------------------------- IDs --------------------------------------------------------------------------------- */
 
 /* --------------------------------------------------------------------------------- Pseudo Classes --------------------------------------------------------------------------------- */
 
-
-}
-
-.card {
+/* .card {
     position: absolute;
     display: flex;
     justify-content: center;
@@ -146,8 +137,7 @@ p {
     width: 360px;
     height: 400px;
     background: #000;
-    
-}
+} */
 
 .card .image {
     width: 100%;
@@ -242,123 +232,152 @@ p {
     border: none;
 }
 
-
 /* test */
 
 .button {
-    position: sticky 
-    
+    position: sticky
 }
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,800);
-
-*, *:before, *:after{
-  box-sizing: border-box;
-  padding: 0; margin: 0;
-  font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-  text-decoration: none;
-  color: #CAE7EA;
+*, *:before, *:after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    text-decoration: none;
+    color: #CAE7EA;
 }
 
-
-  section.container{
+section.container {
     min-width: 500px;
     margin: 10% auto;
     text-align: center;
-  }
-    a:hover{border-bottom: 1px solid #CAE7EA;} 
-    h1{font-size: 2em; padding: 20px 0;}
-    p{
-      font-size: .75em;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      padding: 20px 0;
-    }
+}
 
-    button:hover{cursor: pointer}
-    button {
-      background: transparent; outline: none;
-      position: relative;
-      border: 2px solid #CAE7EA;
-      padding: 15px 50px;
-      overflow: hidden;
-    }
+a:hover {
+    border-bottom: 1px solid #CAE7EA;
+}
 
-    /*button:before (attr data-hover)*/
-    button:hover:before{opacity: 1; transform: translate(0,0);}
-    button:before{
-      content: attr(data-hover);
-      position: absolute;
-      top: 1.1em; left: 0;
-      width: 100%;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-weight: 800;
-      font-size: .8em;
-      opacity: 0;
-      transform: translate(-100%,0);
-      transition: all .3s ease-in-out;
-    }
-      /*button div (button text before hover)*/
-      button:hover div{opacity: 0; transform: translate(100%,0)}
-      button div{
-        text-transform: uppercase;
-        letter-spacing: 3px;
-        font-weight: 800;
-        font-size: .8em;
-        transition: all .3s ease-in-out;
-      }
+h1 {
+    font-size: 2em;
+    padding: 20px 0;
+}
 
-      /* contact form */ 
-      @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+p {
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
 
-     
-      form { max-width:420px; margin:50px auto; }
-      
-      .feedback-input {
-        color:rgb(204, 193, 193);
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight:500;
-        font-size: 18px;
-        border-radius: 5px;
-        line-height: 22px;
-        background-color: transparent;
-        border:2px solid #000000;
-        transition: all 0.3s;
-        padding: 13px;
-        margin-bottom: 15px;
-        width:100%;
-        box-sizing: border-box;
-        outline:0;
-      }
-      
-      .feedback-input:focus { border:2px solid #000000; }
-      
-      textarea {
-        height: 150px;
-        line-height: 150%;
-        resize:vertical;
-      }
-      
-      [type="submit"] {
-        font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-        width: 100%;
-        background:#000000;
-        border-radius:5px;
-        border:0;
-        cursor:pointer;
-        color:white;
-        font-size:24px;
-        padding-top:10px;
-        padding-bottom:10px;
-        transition: all 0.3s;
-        margin-top:-4px;
-        font-weight:700;
-      }
-      [type="submit"]:hover { background:#CAE7EA; }
+button:hover {
+    cursor: pointer
+}
 
+button {
+    background: transparent;
+    outline: none;
+    position: relative;
+    border: 2px solid #CAE7EA;
+    padding: 15px 50px;
+    overflow: hidden;
+}
 
-  
-    
+/*button:before (attr data-hover)*/
 
-   
+button:hover:before {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+button:before {
+    content: attr(data-hover);
+    position: absolute;
+    top: 1.1em;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    opacity: 0;
+    transform: translate(-100%, 0);
+    transition: all .3s ease-in-out;
+}
+
+/*button div (button text before hover)*/
+
+button:hover div {
+    opacity: 0;
+    transform: translate(100%, 0)
+}
+
+button div {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: .8em;
+    transition: all .3s ease-in-out;
+}
+
+/* contact form */
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+form {
+    max-width: 420px;
+    margin: 50px auto;
+}
+
+.feedback-input {
+    /* color: rgb(204, 193, 193); */
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: transparent;
+    border: 2px solid #000000;
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    outline: 0;
+}
+
+.feedback-input:focus {
+    border: 2px solid #000000;
+}
+
+textarea {
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    width: 100%;
+    background: #000000;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700;
+}
+
+[type="submit"]:hover {
+    background: #CAE7EA;
+    color: black;
+}
+
+.form {
+    max-width: 420px;
+    margin: 50px auto;
+}

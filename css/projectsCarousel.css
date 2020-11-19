@@ -11,12 +11,13 @@
     width: 100%;
     position: absolute;
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 0.2s;
 }
 
 .item {
     display: block;
     position: absolute;
+    cursor: pointer;
     /* background: #000; */
     width: 250px;
     height: 200px;
@@ -28,9 +29,9 @@
     border-radius: 10px;
 }
 
+
 .a {
     transform: rotateY(0deg) translateZ(250px);
-    /* background: #ed1c24; */
 }
 
 .b {
@@ -40,23 +41,50 @@
 
 .c {
     transform: rotateY(120deg) translateZ(250px);
-    background: #39b54a;
+    background: #0072bc;
 }
 
 .d {
     transform: rotateY(180deg) translateZ(250px);
-    background: #f26522;
+    background: #0072bc;
 }
 
 .e {
     transform: rotateY(240deg) translateZ(250px);
-    background: #630460;
+    background: #0072bc;
 }
 
 .f {
     transform: rotateY(300deg) translateZ(250px);
-    background: #8c6239;
+    background: #0072bc;
 }
+
+
+/* Hovers */
+.a:hover {
+    transform: rotateY(0deg) translateZ(260px);
+}
+
+.b:hover {
+    transform: rotateY(60deg) translateZ(260px);
+}
+
+.c:hover {
+    transform: rotateY(120deg) translateZ(260px);
+}
+
+.d:hover {
+    transform: rotateY(180deg) translateZ(260px);
+}
+
+.e:hover {
+    transform: rotateY(240deg) translateZ(260px);
+}
+
+.f:hover {
+    transform: rotateY(300deg) translateZ(260px);
+}
+
 
 .next, .prev {
     color: #444;
