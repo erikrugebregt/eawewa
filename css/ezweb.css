@@ -6,6 +6,19 @@
     If media queries are necessary, add a new group (------- Group name (-------).
 */
 
+/* Bug fix */
+
+body:after {
+    display: none;
+    content: url("../img/chris/basic.png") url("../img/chris/premium.png");
+}
+/* body::after {
+    content: url("../img/chris/premium.png");
+}
+body::after {
+    content: url("../img/chris/pro.png");
+} */
+
 /* ------------------------------------------------------ Eriks lekkere fonts ------------------------------------------------------ */
 
 @font-face {
@@ -77,26 +90,30 @@ p {
 }
 
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
-#oldPhoto1{
+
+#oldPhoto1 {
     content: url("../img/testillufoto1.png");
 }
-#oldPhoto2{
+
+#oldPhoto2 {
     content: url("../img/testillufoto2.png");
 }
-#oldPhoto3{
+
+#oldPhoto3 {
     content: url("../img/testillufoto3.png");
 }
 
-#cardBasic:hover #oldPhoto1{
+#cardBasic:hover #oldPhoto1 {
     content: url("../img/chris/basic.png");
 }
-#cardPremium:hover #oldPhoto2{
+
+#cardPremium:hover #oldPhoto2 {
     content: url("../img/chris/premium.png");
 }
-#cardPro:hover #oldPhoto3{
+
+#cardPro:hover #oldPhoto3 {
     content: url("../img/chris/pro.png");
 }
-
 
 .belowShadow {
     /* background-color: rgb(110, 110, 110); */
