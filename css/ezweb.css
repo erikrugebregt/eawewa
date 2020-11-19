@@ -77,9 +77,25 @@ p {
 }
 
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
+#oldPhoto1{
+    content: url("../img/testillufoto1.png");
+}
+#oldPhoto2{
+    content: url("../img/testillufoto2.png");
+}
+#oldPhoto3{
+    content: url("../img/testillufoto3.png");
+}
 
-
-
+#cardBasic:hover #oldPhoto1{
+    content: url("../img/chris/basic.png");
+}
+#cardPremium:hover #oldPhoto2{
+    content: url("../img/chris/premium.png");
+}
+#cardPro:hover #oldPhoto3{
+    content: url("../img/chris/pro.png");
+}
 
 
 .belowShadow {
