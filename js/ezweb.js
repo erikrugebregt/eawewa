@@ -48,17 +48,17 @@ async function openModal(htmlModalContent)
 }
 
 
-$("#contactBtn").click(function ()
-{
-    openModal(`
-        
-    <div style="text-align: center;">
-            
-            Telefoonnummer: +31 6 16284091
-        </div>
+// $("#contactBtn").click(function ()
+// {
+//     openModal(`
 
-    `);
-});
+//     <div style="text-align: center;">
+
+//             Telefoonnummer: +31 6 16284091
+//         </div>
+
+//     `);
+// });  Modal contact.
 
 
 /* ------------------------------------------------- MODAL ------------------------------------------------- */

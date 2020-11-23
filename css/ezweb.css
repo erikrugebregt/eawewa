@@ -92,28 +92,53 @@ p {
 
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
 
-#oldPhoto1 {
+#oldPhoto1Top {
     content: url("../img/testillufoto1.png");
 }
 
-#oldPhoto2 {
+#oldPhoto2Top {
     content: url("../img/testillufoto2.png");
 }
 
-#oldPhoto3 {
+#oldPhoto3Top {
     content: url("../img/testillufoto3.png");
 }
 
-#cardBasic:hover #oldPhoto1 {
+.oldPhotoTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-duration: 1s;
+    z-index: 0;
+}
+
+.oldPhotoBottom {
+    z-index: -1;
+}
+
+#oldPhoto1Bottom {
     content: url("../img/chris/basic.png");
 }
 
-#cardPremium:hover #oldPhoto2 {
+#oldPhoto2Bottom {
     content: url("../img/chris/premium.png");
 }
 
-#cardPro:hover #oldPhoto3 {
+#oldPhoto3Bottom {
     content: url("../img/chris/pro.png");
+}
+
+
+#cardBasic:hover #oldPhoto1Top {
+    opacity: 0;
+}
+
+#cardPremium:hover #oldPhoto2Top {
+    opacity: 0;
+}
+
+#cardPro:hover #oldPhoto3Top {
+    opacity: 0;
 }
 
 .belowShadow {
@@ -177,6 +202,7 @@ p {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .card .image img {
