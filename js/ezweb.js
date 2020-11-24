@@ -75,7 +75,7 @@ window.onclick = function (event)
 }
 
 
-/* Telegram message time! */
+/* ------------------------------------------------- Telegram message time! ------------------------------------------------- */
 $("#sendMsgBtn").click(function ()
 {
     let msgString =
