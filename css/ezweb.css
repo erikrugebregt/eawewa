@@ -12,6 +12,7 @@ body:after {
     display: none;
     content: url("../img/chris/basic.png") url("../img/chris/premium.png");
 }
+
 /* body::after {
     content: url("../img/chris/premium.png");
 }
@@ -91,28 +92,53 @@ p {
 
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
 
-#oldPhoto1 {
+#oldPhoto1Top {
     content: url("../img/testillufoto1.png");
 }
 
-#oldPhoto2 {
+#oldPhoto2Top {
     content: url("../img/testillufoto2.png");
 }
 
-#oldPhoto3 {
+#oldPhoto3Top {
     content: url("../img/testillufoto3.png");
 }
 
-#cardBasic:hover #oldPhoto1 {
+.oldPhotoTop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-duration: 1s;
+    z-index: 0;
+}
+
+.oldPhotoBottom {
+    z-index: -1;
+}
+
+#oldPhoto1Bottom {
     content: url("../img/chris/basic.png");
 }
 
-#cardPremium:hover #oldPhoto2 {
+#oldPhoto2Bottom {
     content: url("../img/chris/premium.png");
 }
 
-#cardPro:hover #oldPhoto3 {
+#oldPhoto3Bottom {
     content: url("../img/chris/pro.png");
+}
+
+
+#cardBasic:hover #oldPhoto1Top {
+    opacity: 0;
+}
+
+#cardPremium:hover #oldPhoto2Top {
+    opacity: 0;
+}
+
+#cardPro:hover #oldPhoto3Top {
+    opacity: 0;
 }
 
 .belowShadow {
@@ -176,6 +202,7 @@ p {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .card .image img {
@@ -416,43 +443,52 @@ textarea {
 }
 
 /*test*/
+
 * {
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Float four columns side by side */
-  .column {
+}
+
+/* Float four columns side by side */
+
+.column {
     width: 25%;
     padding: 0 10px;
-  }
-  
-  /* Remove extra left and right margins, due to padding */
-  .row {margin: 0 -5px; justify-content: center;}
-  
-  /* Clear floats after the columns */
-  .row:after {
+}
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
     content: "";
     display: table;
     clear: both;
-  }
-  
-  /* Responsive columns */
-  @media screen and (max-width: 600px) {
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
     .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
     }
-  }
-  
-  /* Style the counter cards */
-  .card {
+}
+
+/* Style the counter cards */
+
+.staffCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
     background-color: #f1f1f1;
-  }
+}
