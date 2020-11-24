@@ -66,6 +66,10 @@
     top: 15%;
 }
 
+#modalContent {
+    height: 100%;
+}
+
 /* The Close Button */
 
 .close {
