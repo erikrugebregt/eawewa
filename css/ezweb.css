@@ -57,6 +57,13 @@ body::after {
     src: url("fonts/SailecMedium.ttf")
 }
 
+/* --------------------------------------------------------------------------------- Global variables --------------------------------------------------------------------------------- */
+
+:root {
+    --primary-bg-color: #CAE7EA;
+    --secondary-bg-color: white;
+}
+
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
 
 body {
@@ -75,10 +82,18 @@ h2 {
     font-size: 22px;
 }
 
-.blue {
-    background: #CAE7EA;
-    height: 700px;
+.primaryHorizontalTab {
+    background-color: var(--primary-bg-color);
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.secondaryHorizontalTab {
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .solidBorder {
@@ -127,7 +142,6 @@ p {
 #oldPhoto3Bottom {
     content: url("../img/chris/pro.png");
 }
-
 
 #cardBasic:hover #oldPhoto1Top {
     opacity: 0;
