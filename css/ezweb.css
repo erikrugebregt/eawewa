@@ -6,20 +6,6 @@
     If media queries are necessary, add a new group (------- Group name (-------).
 */
 
-/* Bug fix */
-
-body:after {
-    display: none;
-    content: url("../img/chris/basic.png") url("../img/chris/premium.png");
-}
-
-/* body::after {
-    content: url("../img/chris/premium.png");
-}
-body::after {
-    content: url("../img/chris/pro.png");
-} */
-
 /* ------------------------------------------------------ Eriks lekkere fonts ------------------------------------------------------ */
 
 @font-face {
@@ -108,46 +94,12 @@ h2 {
 
 p {
     font-family: proximanovalight;
+    font-family: proximanovaextrabold;
     font-size: 14px;
 }
 
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
 
-#oldPhoto1Top {
-    content: url("../img/testillufoto1.png");
-}
-
-#oldPhoto2Top {
-    content: url("../img/testillufoto2.png");
-}
-
-#oldPhoto3Top {
-    content: url("../img/testillufoto3.png");
-}
-
-.oldPhotoTop {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition-duration: 1s;
-    z-index: 0;
-}
-
-.oldPhotoBottom {
-    z-index: -1;
-}
-
-#oldPhoto1Bottom {
-    content: url("../img/chris/basic.png");
-}
-
-#oldPhoto2Bottom {
-    content: url("../img/chris/premium.png");
-}
-
-#oldPhoto3Bottom {
-    content: url("../img/chris/pro.png");
-}
 
 #cardBasic:hover #oldPhoto1Top {
     opacity: 0;
@@ -157,9 +109,6 @@ p {
     opacity: 0;
 }
 
-#cardPro:hover #oldPhoto3Top {
-    opacity: 0;
-}
 
 .belowShadow {
     /* background-color: rgb(110, 110, 110); */
@@ -222,7 +171,6 @@ p {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .card .image img {
