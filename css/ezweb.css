@@ -71,15 +71,21 @@ h2 {
 .primaryHorizontalTab {
     background-color: var(--primary-bg-color);
     text-align: center;
-    padding-bottom: 50px;
-    padding-top: 40px;
-    margin-top: 20px;
+    display: table;
+    min-height: 80vh;
+    width: 100%;
 }
 .secondaryHorizontalTab {
     background-color: var(--secondary-bg-color);
     text-align: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    display: table;
+    width: 100%;
+    min-height: 80vh;
+}
+
+.table-cell {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 .solidBorder {
@@ -267,7 +273,6 @@ p {
     margin: 0;
     font: 300 1em/1.5 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
     text-decoration: none;
-    color: #CAE7EA;
 }
 
 section.container {
@@ -424,7 +429,7 @@ body {
 /* Remove extra left and right margins, due to padding */
 
 .row {
-    margin: 0 -5px;
+    width: 100%;
     justify-content: center;
 }
 
