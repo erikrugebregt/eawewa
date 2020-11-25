@@ -43,6 +43,13 @@
     src: url("fonts/SailecMedium.ttf")
 }
 
+/* --------------------------------------------------------------------------------- Global variables --------------------------------------------------------------------------------- */
+
+:root {
+    --primary-bg-color: #CAE7EA;
+    --secondary-bg-color: white;
+}
+
 /* --------------------------------------------------------------------------------- Elements --------------------------------------------------------------------------------- */
 
 body {
@@ -61,10 +68,18 @@ h2 {
     font-size: 22px;
 }
 
-.blue {
-    background: #CAE7EA;
-    height: 700px;
+.primaryHorizontalTab {
+    background-color: var(--primary-bg-color);
     text-align: center;
+    padding-bottom: 50px;
+    padding-top: 40px;
+    margin-top: 20px;
+}
+.secondaryHorizontalTab {
+    background-color: var(--secondary-bg-color);
+    text-align: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
 }
 
 .solidBorder {
@@ -80,7 +95,13 @@ p {
 /* --------------------------------------------------------------------------------- Classes --------------------------------------------------------------------------------- */
 
 
+#cardBasic:hover #oldPhoto1Top {
+    opacity: 0;
+}
 
+#cardPremium:hover #oldPhoto2Top {
+    opacity: 0;
+}
 
 
 .belowShadow {
@@ -383,3 +404,54 @@ textarea {
     margin: 50px auto;
 }
 
+/*test*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+
+.column {
+    width: 25%;
+    padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+
+.row {
+    margin: 0 -5px;
+    justify-content: center;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+
+.staffCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+    min-height: 300px;
+}

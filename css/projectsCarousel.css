@@ -30,36 +30,6 @@
 }
 
 
-.a {
-    transform: rotateY(0deg) translateZ(250px);
-}
-
-.b {
-    transform: rotateY(60deg) translateZ(250px);
-    background: #0072bc;
-}
-
-.c {
-    transform: rotateY(120deg) translateZ(250px);
-    background: #0072bc;
-}
-
-.d {
-    transform: rotateY(180deg) translateZ(250px);
-    background: #0072bc;
-}
-
-.e {
-    transform: rotateY(240deg) translateZ(250px);
-    background: #0072bc;
-}
-
-.f {
-    transform: rotateY(300deg) translateZ(250px);
-    background: #0072bc;
-}
-
-
 /* Hovers */
 .a:hover {
     transform: rotateY(0deg) translateZ(260px);
